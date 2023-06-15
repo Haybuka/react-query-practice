@@ -1,28 +1,32 @@
-import React, { useState } from 'react'
-import { useQuery } from 'react-query'
-import axios from 'axios'
+import { useSuperHeroesData } from '../hooks/useSuperHeroesData'
 
-const fetchSuperHeroes = () => {
-  return axios.get("http://localhost:4000/superheroes")
+
+
+const dataTransform = (data) => {
+  const superHeroNames = data?.data.map(hero => hero);
+  return superHeroNames
+
 }
 
 const RQSuperHeroes = () => {
-  const [pollStop, setPollStop] = useState(true)
   const onSuccess = (data) => {
-    data?.data.length === 5 && setPollStop(false)
-    console.log("perform side effect after data fetch", data?.data.length)
+    console.log("perform side effect after data fetch")
   }
 
   const onError = () => {
-    setPollStop(false)
     console.log("perform side effect on error")
   }
-  const { data, isLoading, isError, error, refetch } = useQuery('super-heroes', fetchSuperHeroes,
-    { onSuccess, onError, refetchInterval: pollStop ? 3000 : false })
+
+  const options = {
+    onError, onSuccess, dataTransform
+  }
+
+  const { data, isLoading, isError, error, refetch } = useSuperHeroesData(options)
 
   if (isLoading) {
     return <h4>.... loading</h4>
   }
+
 
   if (isError) {
     return <h4>{error.message}</h4>
@@ -30,7 +34,7 @@ const RQSuperHeroes = () => {
   return (
     <div>
       {
-        data?.data.map((heroes, id) => (
+        data?.map((heroes, id) => (
           <h4 key={id}>{heroes.name}</h4>
         ))
       }
