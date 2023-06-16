@@ -35,6 +35,11 @@ const Nav = () => {
             Dependent Queries
           </Link>
         </li>
+        <li>
+          <Link to="rq-paginated">
+            paginated Queries
+          </Link>
+        </li>
       </ul>
     </nav>
   )
