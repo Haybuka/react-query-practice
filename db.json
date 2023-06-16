@@ -3,27 +3,32 @@
     {
       "id": 1,
       "name": "Batman",
-      "alterEgo": "Bruce Wayne"
+      "alterEgo": "Bruce Wayne",
+      "age": 28
     },
     {
       "id": 2,
       "name": "Superman",
-      "alterEgo": "Clark kent"
+      "alterEgo": "Clark kent",
+      "age": 32
     },
     {
       "id": 3,
       "name": "Wonder woman",
-      "alterEgo": "Princes diana"
+      "alterEgo": "Princes diana",
+      "age": 20
     },
     {
       "id": 4,
       "name": "Owlet",
-      "alterEgo": "Princes Shiera"
+      "alterEgo": "Princes Shiera",
+      "age": 30
     },
     {
       "id": 5,
       "name": "  Super Girl",
-      "alterEgo": "Kara zor-el"
+      "alterEgo": "Kara zor-el",
+      "age": 30
     }
   ],
   "friends": [
@@ -42,6 +47,18 @@
     {
       "id": 4,
       "name": "Phoebe buffay"
+    }
+  ],
+  "users": [
+    {
+      "id": "vishwas@example.com",
+      "channelId": "codevolution"
+    }
+  ],
+  "channels": [
+    {
+      "id": "codevolution",
+      "courses": ["react", "vue", "angular"]
     }
   ]
 }

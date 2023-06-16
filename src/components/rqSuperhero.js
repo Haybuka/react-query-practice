@@ -13,7 +13,9 @@ const RqSuperheroe = () => {
   }
 
   const options = {
-    enabled: true, dataTransform, id: heroId
+    enabled: true, dataTransform, id: heroId,
+    refetchOnWindowFocus: true,
+
   }
 
   const { data } = useSuperHeroData(options)
@@ -23,6 +25,8 @@ const RqSuperheroe = () => {
       <h3>Super hero</h3>
       <p>
         {data?.name} - {data?.alterEgo}
+        <br />
+        age - {data?.age}
       </p>
 
     </div>
