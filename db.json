@@ -2,28 +2,46 @@
   "superheroes": [
     {
       "id": 1,
-      "name":"Batman",
-      "alterEgo" : "Bruce Wayne"
-    },
-      {
-      "id": 2,
-      "name":"Superman",
-      "alterEgo" : "Clark kent"
-    },
-      {
-      "id": 3,
-      "name":"Wonder woman",
-      "alterEgo" : "Princes diana"
+      "name": "Batman",
+      "alterEgo": "Bruce Wayne"
     },
     {
-    "id": 4,
-    "name":"Owlet",
-    "alterEgo" : "Princes Shiera"
-  },
-  {
-  "id": 5,
-  "name":"  Super Girl",
-  "alterEgo" : "Kara zor-el"
-}
+      "id": 2,
+      "name": "Superman",
+      "alterEgo": "Clark kent"
+    },
+    {
+      "id": 3,
+      "name": "Wonder woman",
+      "alterEgo": "Princes diana"
+    },
+    {
+      "id": 4,
+      "name": "Owlet",
+      "alterEgo": "Princes Shiera"
+    },
+    {
+      "id": 5,
+      "name": "  Super Girl",
+      "alterEgo": "Kara zor-el"
+    }
+  ],
+  "friends": [
+    {
+      "id": 1,
+      "name": "Chandler Bing"
+    },
+    {
+      "id": 2,
+      "name": "Joey tribbiani"
+    },
+    {
+      "id": 3,
+      "name": "Rachel green"
+    },
+    {
+      "id": 4,
+      "name": "Phoebe buffay"
+    }
   ]
 }

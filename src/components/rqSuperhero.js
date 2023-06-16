@@ -9,7 +9,7 @@ const RqSuperheroe = () => {
   const { heroId } = useParams();
 
   const dataTransform = (data) => {
-    return data.data
+    return data?.data
   }
 
   const options = {
@@ -17,12 +17,12 @@ const RqSuperheroe = () => {
   }
 
   const { data } = useSuperHeroData(options)
-  console.log({ data })
+
   return (
     <div>
       <h3>Super hero</h3>
       <p>
-        {data.name} - {data.alterEgo}
+        {data?.name} - {data?.alterEgo}
       </p>
 
     </div>

@@ -20,6 +20,17 @@ const Nav = () => {
             rq super heroes
           </Link>
         </li>
+        <li>
+          <Link to="rq-parallel">
+            ParallelQueries
+          </Link>
+        </li>
+        <li>
+          <Link to="rq-dynamic-parallel">
+            DYNAMIC Parallel Queries
+          </Link>
+        </li>
+
       </ul>
     </nav>
   )
