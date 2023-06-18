@@ -29,6 +29,21 @@
       "name": "  Super Girl",
       "alterEgo": "Kara zor-el",
       "age": 30
+    },
+    {
+      "name": "barry allen",
+      "alterEgo": "flash",
+      "id": 6
+    },
+    {
+      "name": "oliver queen",
+      "alterEgo": "green arrow",
+      "id": 7
+    },
+    {
+      "name": "oliver queen",
+      "alterEgo": "green arrow",
+      "id": 8
     }
   ],
   "friends": [
@@ -58,7 +73,11 @@
   "channels": [
     {
       "id": "codevolution",
-      "courses": ["react", "vue", "angular"]
+      "courses": [
+        "react",
+        "vue",
+        "angular"
+      ]
     }
   ],
   "colors": [
@@ -89,6 +108,10 @@
     {
       "id": 7,
       "label": "violet"
+    },
+    {
+      "id": 8,
+      "label": "cyan"
     }
   ]
 }
